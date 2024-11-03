@@ -34,9 +34,10 @@ The data comes from the Statistics Iceland API via a POST request.
 ## Future Work
 There are a few things that could be added. I will explain some of them, and if I do decide to act on them they will be stricken over.
 
-1. Write tests, for functions and data.
-2. Create a dashboard to visualize the consumer price index data.
-2. Explore whether to use another DBMS like Postgres or Snowflake.
-3. Consider whether and how to deploy to the cloud, using Databricks and Delta Live Tables (for dashboard) for example.
-4. Statistics Iceland publishes a new index each month, so fetching that each month is neede. Probably use Apache Airflow for these orchestrations.
-5. Containerize the code, with docker.
+1. Add a Diagram showing the database schema.
+2. Write tests, for functions and data.
+3. Create a dashboard to visualize the consumer price index data.
+4. Explore whether to use another DBMS like Postgres or Snowflake.
+5. Consider whether and how to deploy to the cloud, using Databricks and Delta Live Tables (for dashboard) for example.
+6. Statistics Iceland publishes a new index each month, so fetching that each month is neede. Probably use Apache Airflow for these orchestrations.
+7. Containerize the code, with docker.
