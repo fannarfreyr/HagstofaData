@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import pandas as pd
 import numpy as np 
 from sqlalchemy import create_engine
-import logging
 import requests
 import datetime as dt
 
@@ -19,7 +18,7 @@ def change_dir(file_path):
     """
     try:
         if os.getcwd() == file_path:
-            return None
+            return os.getcwd()
         os.chdir(file_path)
         return os.getcwd()
     except Exception as e:
